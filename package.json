@@ -25,5 +25,8 @@
   "browserslist": [
     "defaults",
     "IE 11"
-  ]
+  ],
+  "dependencies": {
+    "gsap": "^3.7.1"
+  }
 }

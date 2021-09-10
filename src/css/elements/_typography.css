@@ -1,3 +1,25 @@
+@font-face {
+  src:  url('https://f.hubspotusercontent10.net/hubfs/9346563/Fonts/GraphikRegular.otf');
+  font-family: 'Graphik';
+  font-weight: 400;
+}
+
+@font-face {
+  src:  url('https://f.hubspotusercontent10.net/hubfs/9346563/Fonts/GraphikMedium.otf');
+  font-family: 'Graphik';
+  font-weight: 500;
+}
+
+@font-face {
+  src:  url('https://f.hubspotusercontent10.net/hubfs/9346563/Fonts/GraphikSemibold.otf');
+  font-family: 'Graphik';
+  font-weight: 600;
+}
+
+*{
+  font-family: 'Graphik';
+}
+
 body {
   line-height: 1.4;
   word-break: break-word;
@@ -39,6 +61,7 @@ h6 {
 ul,
 ol {
   margin: 0 0 1.4rem;
+  padding-left: 1rem;
 }
 
 ul ul,
@@ -85,3 +108,5 @@ img {
   font-size: 0.583rem;
   word-break: normal;
 }
+
+

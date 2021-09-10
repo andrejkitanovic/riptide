@@ -1,0 +1,23 @@
+section.hero{
+    padding-top:238px;
+    padding-bottom:120px
+}
+
+.hero__header-top{
+    color:#FF8363;
+}
+
+@media(max-width: 767px) {
+    section.hero{
+        padding-top:80px;
+        padding-bottom:80px;
+    }
+
+    section.hero .span6{
+        text-align:center;
+    }
+
+    .hero__image{
+        margin-top:80px;
+    }
+}

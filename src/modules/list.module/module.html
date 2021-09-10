@@ -1,0 +1,89 @@
+<section class="list">
+  <div class="row-fluid">
+    <div class="span6">
+      <div class="list__title">
+        {% inline_text field="title" value="{{ module.title }}" %}
+      </div>
+    </div>
+  </div>
+  <div class="row-fluid">
+    <div class="span2">
+      <div class="list__item">
+          <div class="list__item-circle" style="background-color:#DBEFFF">
+            {% if module.list_icons.first_item_image.src %}
+               {% set loadingAttr = module.list_icons.first_item_image.loading != 'disabled' ? 'loading="{{ module.list_icons.first_item_image.loading }}"' : '' %}
+              <img src="{{ module.list_icons.first_item_image.src }}" alt="{{ module.list_icons.first_item_image.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+            {% endif %}
+          </div>
+          <div class="list__item-title">
+            {% inline_text field="list_items.first_item_text" value="{{ module.list_items.first_item_text }}" %}
+          </div>
+      </div>
+    </div>
+    <div class="span2">
+        <div class="list__item">
+          <div class="list__item-circle" style="background-color:#FFECDC">
+            {% if module.list_icons.second_item_image.src %}
+               {% set loadingAttr = module.list_icons.second_item_image.loading != 'disabled' ? 'loading="{{ module.list_icons.second_item_image.loading }}"' : '' %}
+              <img src="{{ module.list_icons.second_item_image.src }}" alt="{{ module.list_icons.second_item_image.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+            {% endif %}
+          </div>
+          <div class="list__item-title">
+            {% inline_text field="list_items.second_item_text" value="{{ module.list_items.second_item_text }}" %}
+          </div>
+        </div>
+    </div>
+    <div class="span2">
+        <div class="list__item">
+          <div class="list__item-circle" style="background-color:#FFE5E4">
+            {% if module.list_icons.third_item_image.src %}
+               {% set loadingAttr = module.list_icons.third_item_image.loading != 'disabled' ? 'loading="{{ module.list_icons.third_item_image.loading }}"' : '' %}
+              <img src="{{ module.list_icons.third_item_image.src }}" alt="{{ module.list_icons.third_item_image.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+            {% endif %}
+          </div>
+          <div class="list__item-title">
+            {% inline_text field="list_items.third_item_text" value="{{ module.list_items.third_item_text }}" %}
+          </div>
+      </div>
+    </div>
+    <div class="span2">
+        <div class="list__item">
+          <div class="list__item-circle" style="background-color:#E6E6E7">
+            {% if module.list_icons.fourth_item_image.src %}
+               {% set loadingAttr = module.list_icons.fourth_item_image.loading != 'disabled' ? 'loading="{{ module.list_icons.fourth_item_image.loading }}"' : '' %}
+              <img src="{{ module.list_icons.fourth_item_image.src }}" alt="{{ module.list_icons.fourth_item_image.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+            {% endif %}
+          </div>
+          <div class="list__item-title">
+            {% inline_text field="list_items.fourth_item_text" value="{{ module.list_items.fourth_item_text }}" %}
+          </div>
+        </div>
+    </div>
+    <div class="span2">
+        <div class="list__item">
+          <div class="list__item-circle" style="background-color:#F9ECDE">
+            {% if module.list_icons.fifth_item_image.src %}
+               {% set loadingAttr = module.list_icons.fifth_item_image.loading != 'disabled' ? 'loading="{{ module.list_icons.fifth_item_image.loading }}"' : '' %}
+              <img src="{{ module.list_icons.fifth_item_image.src }}" alt="{{ module.list_icons.fifth_item_image.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+            {% endif %}
+          </div>
+          <div class="list__item-title">
+            {% inline_text field="list_items.fifth_item_text" value="{{ module.list_items.fifth_item_text }}" %}
+          </div>
+        </div>
+    </div>
+    <div class="span2">
+        <div class="list__item">
+          <div class="list__item-circle" style="background-color:#DBEFFF">
+            {% if module.list_icons.sixth_item_image.src %}
+               {% set loadingAttr = module.list_icons.sixth_item_image.loading != 'disabled' ? 'loading="{{ module.list_icons.sixth_item_image.loading }}"' : '' %}
+              <img src="{{ module.list_icons.sixth_item_image.src }}" alt="{{ module.list_icons.sixth_item_image.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+            {% endif %}
+          </div>
+          <div class="list__item-title">
+            {% inline_text field="list_items.sixth_item_text" value="{{ module.list_items.sixth_item_text }}" %}
+          </div>
+        </div>
+    </div>
+  </div>
+</section>

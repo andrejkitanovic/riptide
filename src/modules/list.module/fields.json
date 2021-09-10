@@ -1,0 +1,226 @@
+[ {
+  "id" : "a767b4a2-90a0-28f6-9c9a-a99637e36757",
+  "name" : "title",
+  "label" : "Title",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text"
+}, {
+  "id" : "e313a2e1-17d9-5687-2251-5e58eee840c1",
+  "name" : "list_items",
+  "label" : "List Items",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "19bff860-a250-86ae-206b-f1a38f1af7c9",
+    "name" : "first_item_text",
+    "label" : "First Item Text",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text"
+  }, {
+    "id" : "010baf6f-0a85-a267-6ef3-df0492a629ed",
+    "name" : "second_item_text",
+    "label" : "Second Item Text",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text"
+  }, {
+    "id" : "15799be5-ef2a-5cc2-8d1b-7fc407c24984",
+    "name" : "third_item_text",
+    "label" : "Third Item Text",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text"
+  }, {
+    "id" : "177beb45-4e5e-d38e-a9c4-e554eaba51cb",
+    "name" : "fourth_item_text",
+    "label" : "Fourth Item Text",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text"
+  }, {
+    "id" : "05bb9a79-7be6-d6f8-b74a-c2fb8b683736",
+    "name" : "fifth_item_text",
+    "label" : "Fifth Item Text",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text"
+  }, {
+    "id" : "441e3e79-db1d-4ca3-1537-9d38bbe6568b",
+    "name" : "sixth_item_text",
+    "label" : "Sixth Item Text",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text"
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group",
+  "default" : { }
+}, {
+  "id" : "b7439250-3bb1-7df1-129b-c9a68c283628",
+  "name" : "list_icons",
+  "label" : "List Icons",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "f762e8e4-8487-4961-9f98-9d4733ce424e",
+    "name" : "first_item_image",
+    "label" : "First Item Image",
+    "required" : false,
+    "locked" : false,
+    "responsive" : true,
+    "resizable" : false,
+    "show_loading" : false,
+    "type" : "image",
+    "default" : {
+      "size_type" : "auto",
+      "src" : "",
+      "alt" : null,
+      "loading" : "lazy"
+    }
+  }, {
+    "id" : "a3c2099e-e6c2-1485-589e-b7072aa98f7d",
+    "name" : "second_item_image",
+    "label" : "Second Item Image",
+    "required" : false,
+    "locked" : false,
+    "responsive" : true,
+    "resizable" : false,
+    "show_loading" : false,
+    "type" : "image",
+    "default" : {
+      "size_type" : "auto",
+      "src" : "",
+      "alt" : null,
+      "loading" : "lazy"
+    }
+  }, {
+    "id" : "22f67d0a-2689-6ce9-7403-fac66e7de8e5",
+    "name" : "third_item_image",
+    "label" : "Third Item Image",
+    "required" : false,
+    "locked" : false,
+    "responsive" : true,
+    "resizable" : false,
+    "show_loading" : false,
+    "type" : "image",
+    "default" : {
+      "size_type" : "auto",
+      "src" : "",
+      "alt" : null,
+      "loading" : "lazy"
+    }
+  }, {
+    "id" : "3a178065-0be1-78f0-1558-537dff233c64",
+    "name" : "fourth_item_image",
+    "label" : "Fourth Item Image",
+    "required" : false,
+    "locked" : false,
+    "responsive" : true,
+    "resizable" : false,
+    "show_loading" : false,
+    "type" : "image",
+    "default" : {
+      "size_type" : "auto",
+      "src" : "",
+      "alt" : null,
+      "loading" : "lazy"
+    }
+  }, {
+    "id" : "cf40fbee-bced-772c-7f5f-5882c9d0b866",
+    "name" : "fifth_item_image",
+    "label" : "Fifth Item Image",
+    "required" : false,
+    "locked" : false,
+    "responsive" : true,
+    "resizable" : false,
+    "show_loading" : false,
+    "type" : "image",
+    "default" : {
+      "size_type" : "auto",
+      "src" : "",
+      "alt" : null,
+      "loading" : "lazy"
+    }
+  }, {
+    "id" : "7f904f99-7e19-9420-67cb-aab8219b4d17",
+    "name" : "sixth_item_image",
+    "label" : "Sixth Item Image",
+    "required" : false,
+    "locked" : false,
+    "responsive" : true,
+    "resizable" : false,
+    "show_loading" : false,
+    "type" : "image",
+    "default" : {
+      "size_type" : "auto",
+      "src" : "",
+      "alt" : null,
+      "loading" : "lazy"
+    }
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group",
+  "default" : {
+    "first_item_image" : {
+      "size_type" : "auto",
+      "src" : "",
+      "alt" : null,
+      "loading" : "lazy"
+    },
+    "second_item_image" : {
+      "size_type" : "auto",
+      "src" : "",
+      "alt" : null,
+      "loading" : "lazy"
+    },
+    "third_item_image" : {
+      "size_type" : "auto",
+      "src" : "",
+      "alt" : null,
+      "loading" : "lazy"
+    },
+    "fourth_item_image" : {
+      "size_type" : "auto",
+      "src" : "",
+      "alt" : null,
+      "loading" : "lazy"
+    },
+    "fifth_item_image" : {
+      "size_type" : "auto",
+      "src" : "",
+      "alt" : null,
+      "loading" : "lazy"
+    },
+    "sixth_item_image" : {
+      "size_type" : "auto",
+      "src" : "",
+      "alt" : null,
+      "loading" : "lazy"
+    }
+  }
+} ]

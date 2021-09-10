@@ -11,58 +11,112 @@
 {# The main-content ID is used for the navigation skipper in the header.html file. More information on the navigation skipper can be found here: https://github.com/HubSpot/cms-theme-boilerplate/wiki/Accessibility #}
 
 <main id="main-content" class="body-container-wrapper">
-
-  {# All templates are recommended to have an h1 present for both accessibility and SEO best practice. This should be at the top of the template before any other textual content. The h1 element below is within a dnd area to allow content editors the ability to adjust the content and alignment of the text. #}
-
   {% dnd_area 'dnd_area'
     label='Main section',
     class='body-container body-container--home'
   %}
 
-    {# Hero banner #}
-
-    {% include_dnd_partial path='../sections/hero-banner.html' %}
-
-    {# Two column image right #}
-
-    {% include_dnd_partial path='../sections/multi-row-content.html' %}
-
-    {# Two column image left #}
-
+   
+    {# Hero Section #}
     {% dnd_section
-      background_color='#f8fafc',
-      vertical_alignment='MIDDLE'
+      background_color='#FDF6F0',
     %}
       {% dnd_module
-        path='@hubspot/linked_image',
-        img={
-          'alt': 'Stock placeholder image with grayscale geometrical mountain landscape',
-          'loading': 'lazy',
-          'max_height': 451,
-          'max_width': 605,
-          'size_type': 'auto_custom_max',
-          'src': get_asset_url('../images/grayscale-mountain.png')
-        },
-        offset=0,
-        width=6
-      %}
-      {% end_dnd_module %}
-      {% dnd_module
-        path='@hubspot/rich_text',
-        html='<h2>Provide more details here.</h2><p>Use text and images to tell your company’s story. Explain what makes your product or service extraordinary.</p>'
-        offset=6,
-        width=6
+        path='../modules/hero',
+        header_top="Rescue your customers from Anxiety",
+        header_bottom="Connect Customers and Providers in Critical Moments",
+        button_text="Talk to Riptide Today"
       %}
       {% end_dnd_module %}
     {% end_dnd_section %}
 
-    {# Call to action #}
+    {# List Section #}
+    {% dnd_section
+    background_color='#FFFFFF',
+    %}
+      {% dnd_module
+        path='../modules/list',
+        title="With Riptide, brands loop in their service providers to communicate with and help customers.",
+      %}
+      {% end_dnd_module %}
+    {% end_dnd_section %}
 
-    {% include_dnd_partial path='../sections/call-to-action.html' %}
+    {# Chat Section #}
+    {% dnd_section
+    background_color='#FFFFFF',
+    %}
+      {% dnd_module
+        path='../modules/chat',
+        header="Connect Customers and Providers with Conversations"
+      %}
+      {% end_dnd_module %}
+    {% end_dnd_section %}
 
-    {# Three column image with text #}
+    {# Stepper Section #}
+    {% dnd_section
+    background_color='#FFFFFF',
+    %}
+      {% dnd_module
+        path='../modules/stepper',
+        header="Make 3-Way Conversations Easy",
+        button_text="Talk to Riptide Today"
+      %}
+      {% end_dnd_module %}
+    {% end_dnd_section %}
 
-    {% include_dnd_partial path='../sections/multi-column-content.html' %}
+    {# Network Section #}
+    {% dnd_section
+    background_color='#FFFFFF',
+    %}
+      {% dnd_module
+        path='../modules/network',
+        header="Connect Millions of Customers to Your Service Network",
+        button_text="Talk to Riptide Today"
+      %}
+      {% end_dnd_module %}
+    {% end_dnd_section %}
+
+
+
+    {# Analytics Section #}
+    {% dnd_section
+    background_linear_gradient={
+      'direction': 'to bottom',
+      'colors': [
+        '#FDF6F0',
+        '#FFFFFF'
+      ]
+    }
+    %}
+      {% dnd_module
+        path='../modules/analytics',
+        header="See What’s Happening with Every Customer",
+      %}
+      {% end_dnd_module %}
+    {% end_dnd_section %}
+
+    {# Benefits Section #}
+    {% dnd_section
+    background_color='#F6F6F6',
+    %}
+      {% dnd_module
+        path='../modules/benefits',
+        header="Riptide Helps You Create Customers for Life",
+        button_text="Talk to Riptide Today"
+      %}
+      {% end_dnd_module %}
+    {% end_dnd_section %}
+
+    {# Contact Section #}
+    {% dnd_section
+    background_color='#3A3ADD',
+    %}
+      {% dnd_module
+        path='../modules/contact',
+        header="Talk to Riptide Today",
+      %}
+      {% end_dnd_module %}
+    {% end_dnd_section %}
 
   {% end_dnd_area %}
 </main>

@@ -1,0 +1,29 @@
+<section class="contact">
+  <div class="contact__image-container">
+  {% if module.image_field.src %}
+    {% set loadingAttr = module.image_field.loading != 'disabled' ? 'loading="{{ module.image_field.loading }}"' : '' %}
+    <img class="contact__image" src="{{ module.image_field.src }}" alt="{{ module.image_field.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+  {% endif %}
+  </div>
+
+
+  <div class="row-fluid">
+    <div class="span6">
+      <h2 class="contact__header">{% inline_text field="header" value="{{ module.header }}" %}</h2>
+      <div class="contact__text">{% inline_rich_text field="text" value="{{ module.text }}" %}</div>
+    </div>
+  </div>
+  
+  <div class="row-fluid">
+    <div class="contact__form">
+      {% form
+        form_to_use="{{ module.form_field.form_id }}"
+        response_response_type="{{ module.form_field.response_type }}"
+        response_message="{{ module.form_field.message }}"
+        response_redirect_id="{{ module.form_field.redirect_id }}"
+        response_redirect_url="{{module.form_field.redirect_url}}"
+        gotowebinar_webinar_key="{{ module.form_field.gotowebinar_webinar_key }}"
+      %}
+    </div>
+  </div>
+</section>

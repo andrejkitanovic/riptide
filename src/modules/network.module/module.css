@@ -1,0 +1,18 @@
+section.network{
+    padding-top:80px;
+    padding-bottom: 156px;
+}
+
+.network__header{
+    margin-top:150px;
+}
+
+@media(max-width: 767px) {
+    section.network{
+        padding-bottom:80px;
+    }
+    
+    .network__header{
+        margin-top:50px;
+    }
+}

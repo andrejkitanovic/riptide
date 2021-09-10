@@ -143,8 +143,9 @@ html {
 
 body {
   {{ body_font.style }};
-  color: {{ body_font.color }};
+  /* color: {{ body_font.color }}; */
   font-size: {{ body_font.size ~ body_font.size_unit }};
+  color: #3B3B3B;
 }
 
 /* Paragraphs */
@@ -160,11 +161,11 @@ a {
   color: {{ anchor_font.color }};
 }
 
-a:hover,
+/* a:hover,
 a:focus {
   {{ anchor_font.style }};
   color: {{ color_variant(anchor_font.color, -40) }};
-}
+} */
 
 a:active {
   {{ anchor_font.style }};
@@ -215,6 +216,24 @@ h6 {
   text-transform: {{ h6_text_transform }};
 }
 
+@media screen and (max-width: 1180px) {
+  h1{
+    font-size: 32px;
+  }
+  
+  h2{
+    font-size:25px;
+  }
+  
+  h3{
+    font-size:20px;
+  }
+
+  p,li,ul,a{
+    font-size:15px;
+  }
+}
+
 /* Blockquote */
 
 blockquote {
@@ -232,8 +251,28 @@ button,
   {{ button_font.style }};
   background-color: {{ button_bg_color }};
   border-radius: {{ button_corner_radius }};
-  color: {{ button_font.color }};
+  /* color: {{ button_font.color }}; */
   text-transform: {{ button_text_transform }};
+  color:#FFF;
+}
+
+.shallow-button{
+  {{ button_border }};
+  {{ button_spacing }};
+  {{ button_font.style }};
+  border-radius: {{ button_corner_radius }};
+  color: {{ primary_color }};
+  font-weight:600;
+  padding-top:9px;
+  padding-bottom:9px;
+  background-color:#EEF7FF66;
+}
+
+@media(max-width: 767px) {
+  .shallow-button{
+    padding:6px 20px;
+    font-size:15px;
+  }
 }
 
 button:hover,
@@ -245,12 +284,12 @@ button:focus,
   border-color: {{ color_variant(theme.buttons.border.border.top.color, -40) }};
 }
 
-button:active,
+/* button:active,
 .button:active {
   {{ button_font.style }};
   background-color: rgba({{ color_variant(theme.buttons.background.color.color, 40)|convert_rgb }}, {{ theme.buttons.background.color.opacity / 100 }});
   border-color: {{ color_variant(theme.buttons.border_color.color, 40) }};
-}
+} */
 
 {###########################################################################}
 {##############################   5. Forms   ###############################}
@@ -399,15 +438,7 @@ tfoot td {
 {###########################################################################}
 
 .header {
-  background-color: {{ header_bg_color }};
-}
-
-.menu__link,
-.header__logo .logo-company-name,
-.header__language-switcher-label-current,
-.header__language-switcher .lang_list_class li a {
-  color: {{ nav_font_color }};
-  font-family: {{ body_font.font }};
+  /* background-color: {{ header_bg_color }}; */
 }
 
 .menu__child-toggle-icon {
@@ -478,11 +509,6 @@ tfoot td {
   border-bottom-color: {{ header_bg_color }};
 }
 
-.header__language-switcher-label-current,
-.header__language-switcher .lang_list_class li a {
-  font-family: {{ body_font.font }};
-}
-
 .header__language-switcher-label-current:after {
   border-top-color: {{ nav_font_color }};
 }
@@ -503,7 +529,8 @@ tfoot td {
 {###########################################################################}
 
 .footer {
-  background-color: {{ footer_bg_color }};
+  /* background-color: {{ footer_bg_color }}; */
+  background-color:#FFF;
 }
 
 /* Footer content */

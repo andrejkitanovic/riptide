@@ -1,0 +1,119 @@
+section.contact{
+    margin-bottom:20px;
+}
+
+.contact__header,.contact__text{
+    color:#FFF;
+}
+
+.contact__image-container{
+    position: relative;
+    height: 236px;
+}
+
+.contact__image{
+    position:absolute;
+    right:0;
+    top:-50px;
+}
+
+.hs-form-field {
+    width: 30%;
+    margin-right:2%;
+    display: inline-block;
+}
+
+section.contact form label{
+    display: none;
+}
+
+section.contact .input{
+    position: relative;
+}
+
+section.contact .input::before{
+    content:"";
+    position: absolute;
+    width:15px;
+    height: 15px;
+    left:15px;
+    top:46%;
+    transform: translateY(-50%);
+    background: no-repeat center center;
+    background-size:contain;
+}
+
+section.contact .hs-firstname .input::before,
+section.contact .hs-lastname .input::before{
+    background-image:url('https://f.hubspotusercontent10.net/hubfs/9346563/Form%20Icons/profile.svg');
+}
+
+section.contact .hs-company .input::before{
+    background-image:url('https://f.hubspotusercontent10.net/hubfs/9346563/Form%20Icons/company.svg');
+}
+
+section.contact .hs-email .input::before{
+    background-image:url('https://f.hubspotusercontent10.net/hubfs/9346563/Form%20Icons/email.svg');
+}
+
+section.contact .hs-phone .input::before{
+    background-image:url('https://f.hubspotusercontent10.net/hubfs/9346563/Form%20Icons/phone-book.svg');
+}
+
+
+
+section.contact form input[type='text'],
+section.contact form input[type='email'],
+section.contact form input[type='password'],
+section.contact form input[type='tel'],
+section.contact form input[type='number'],
+section.contact form input[type='file'],
+section.contact form select,
+section.contact form textarea {
+    background-color:#6056E5;
+    border: none;
+    border-radius: 0;
+    border-bottom: 1px solid #fff;
+    outline:#fff;
+    color:#FF8363;
+    padding-left:42px;
+}
+
+section.contact form input::placeholder {
+    color:#CCCCCC;
+}
+
+section.contact form .hs-richtext p{
+    color:#fff;
+    max-width:270px;
+    margin-top: 80px;
+    font-size:12px;
+}
+
+section.contact form input[type=submit],
+section.contact form .hs-button{
+    background-color:#FF8363;
+    border:none;
+    padding:15px 60px;
+    border-radius:29px;
+}
+
+section.contact .submitted-message{
+    color:#ff8363;
+    font-weight:600;
+}
+
+@media(max-width: 767px) {
+    .contact__image{
+        max-width:100%;
+    }
+
+    .hs-form-field {
+        width: 100%;
+        margin-right:0;
+    }
+
+    section.contact form .hs-richtext p{
+        margin-top:30px;
+    }
+}

@@ -36,3 +36,10 @@ button:disabled,
   text-decoration: none;
   transition: none;
 }
+
+.shallow-button{
+  cursor: pointer;
+  display: inline-block;
+  text-align: center;
+  white-space: normal;
+}

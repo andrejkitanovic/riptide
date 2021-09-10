@@ -1,0 +1,8 @@
+{
+  "global" : false,
+  "icon" : "fontawesome-5.14.0:Alternate%20Comment:SOLID",
+  "host_template_types" : [ "PAGE" ],
+  "module_id" : 54659053917,
+  "label" : "Chat",
+  "is_available_for_new_content" : true
+}

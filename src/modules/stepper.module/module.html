@@ -1,0 +1,60 @@
+<section class="stepper">
+  <div class="row-fluid">
+    <div class="span7">
+      <div class="stepper__box">
+        {% if module.images.background_image.src %}
+        {% set loadingAttr = module.images.background_image.loading != 'disabled' ? 'loading="{{ module.images.background_image.loading }}"' : '' %}
+          <img class="stepper__background-image" src="{{ module.images.background_image.src }}" alt="{{ module.images.background_image.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+        {% endif %}
+        
+        {% if module.images.first_image.src %}
+        {% set loadingAttr = module.images.first_image.loading != 'disabled' ? 'loading="{{ module.images.first_image.loading }}"' : '' %}
+          <img class="stepper__image-1" src="{{ module.images.first_image.src }}" alt="{{ module.images.first_image.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+        {% endif %}
+        
+        {% if module.images.first_arrow.src %}
+        {% set loadingAttr = module.images.first_arrow.loading != 'disabled' ? 'loading="{{ module.images.first_arrow.loading }}"' : '' %}
+          <img class="stepper__arrow-1" src="{{ module.images.first_arrow.src }}" alt="{{ module.images.first_arrow.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+        {% endif %}
+        
+        {% if module.images.second_image.src %}
+        {% set loadingAttr = module.images.second_image.loading != 'disabled' ? 'loading="{{ module.images.second_image.loading }}"' : '' %}
+          <img class="stepper__image-2" src="{{ module.images.second_image.src }}" alt="{{ module.images.second_image.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+        {% endif %}
+        
+        {% if module.images.second_arrow.src %}
+        {% set loadingAttr = module.images.second_arrow.loading != 'disabled' ? 'loading="{{ module.images.second_arrow.loading }}"' : '' %}
+          <img class="stepper__arrow-2" src="{{ module.images.second_arrow.src }}" alt="{{ module.images.second_arrow.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+        {% endif %}
+        
+        {% if module.images.third_image.src %}
+        {% set loadingAttr = module.images.third_image.loading != 'disabled' ? 'loading="{{ module.images.third_image.loading }}"' : '' %}
+          <img class="stepper__image-3" src="{{ module.images.third_image.src }}" alt="{{ module.images.third_image.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+        {% endif %}
+      </div>
+    </div>
+    <div class="span1">
+    </div>
+    <div class="span4">
+      <h2 class="stepper__header">{% inline_text field="header" value="{{ module.header }}" %}</h2>
+      <div class="stepper__text">{% inline_rich_text field="text" value="{{ module.text }}" %}</div>
+      {% set href = module.button_link.url.href %}
+      {% if module.button_link.url.type is equalto "EMAIL_ADDRESS" %}
+        {% set href = "mailto:" + href %}
+      {% endif %}
+      {% set rel = [] %}
+      {% if module.button_link.no_follow %}
+        {% do rel.append("nofollow") %}
+      {% endif %}
+      {% if module.button_link.open_in_new_tab %}
+        {% do rel.append("noopener") %}
+      {% endif %}
+      <a class="stepper__button button" href="{{ href }}"
+        {% if module.button_link.open_in_new_tab %}target="_blank"{% endif %}
+        {% if rel %}rel="{{ rel|join(" ") }}"{% endif %}
+        >
+        {% inline_text field="button_text" value="{{ module.button_text }}" %}
+      </a>
+    </div>
+  </div>
+</section>
