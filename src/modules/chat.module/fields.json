@@ -16,6 +16,22 @@
   "locked" : false,
   "type" : "richtext"
 }, {
+  "id" : "79cfb7ab-d850-8698-6690-51ba113bc4f7",
+  "name" : "dots",
+  "label" : "Dots",
+  "required" : false,
+  "locked" : false,
+  "responsive" : true,
+  "resizable" : true,
+  "show_loading" : false,
+  "type" : "image",
+  "default" : {
+    "size_type" : "auto",
+    "src" : "",
+    "alt" : null,
+    "loading" : "lazy"
+  }
+}, {
   "id" : "7eb2b3c1-e5d9-86a7-a8f7-7321482a4ed7",
   "name" : "icon",
   "label" : "Icon",
@@ -130,6 +146,22 @@
       "loading" : "lazy"
     }
   }, {
+    "id" : "86fce15c-af6f-c457-ed00-a8aeeaaf209c",
+    "name" : "fifth_message",
+    "label" : "Fifth Message",
+    "required" : false,
+    "locked" : false,
+    "responsive" : true,
+    "resizable" : true,
+    "show_loading" : false,
+    "type" : "image",
+    "default" : {
+      "size_type" : "auto",
+      "src" : "",
+      "alt" : null,
+      "loading" : "lazy"
+    }
+  }, {
     "id" : "cb375f5d-be7b-9936-0da8-c6bb2030be21",
     "name" : "chat_box",
     "label" : "Chat Box",
@@ -169,6 +201,12 @@
       "loading" : "lazy"
     },
     "fourth_message" : {
+      "size_type" : "auto",
+      "src" : "",
+      "alt" : null,
+      "loading" : "lazy"
+    },
+    "fifth_message" : {
       "size_type" : "auto",
       "src" : "",
       "alt" : null,

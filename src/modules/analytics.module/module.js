@@ -8,6 +8,7 @@ if (gsap) {
     const smallImage = $('.analytics__small-image-picture');
     const bigImageBg = $('.analytics__big-image-background');
     const bigImage = $('.analytics__big-image-picture');
+    const bigImageTop = $('.analytics__big-image-top');
 
     if (analytics.length > 0) {
       var tl = gsap.timeline({
@@ -37,6 +38,12 @@ if (gsap) {
       });
 
       tl.from(bigImage, {
+        autoAlpha: 0,
+        ease: 'power3',
+        duration: 0.5
+      });
+
+      tl.from(bigImageTop, {
         autoAlpha: 0,
         ease: 'power3',
         duration: 0.5

@@ -24,7 +24,7 @@
 
 .header {
   background-color: transparent;
-  position: fixed;
+  /* position: fixed; */
   width: 100%;
   padding: 34px 0;
   background-color: #FDF6F0;
@@ -45,6 +45,7 @@
   /* position: absolute; */
   /* left: 68px; */
   /* margin-top: 11px; */
+  margin-top:5px;
 }
 
 .header__container{

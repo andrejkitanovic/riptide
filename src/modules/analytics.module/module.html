@@ -4,6 +4,7 @@
       <h2 class="analytics__header">{% inline_text field="header" value="{{ module.header }}" %}</h2>
       <div class="analytics__text">{% inline_rich_text field="text" value="{{ module.text }}" %}</div>
     </div>
+    <div class="span2"></div>
     <div class="span6">
       <div class="analytics__small-image">
         {% if module.small_image.background.src %}
@@ -24,6 +25,10 @@
         {% if module.big_image.background.src %}
           {% set loadingAttr = module.big_image.background.loading != 'disabled' ? 'loading="{{ module.big_image.background.loading }}"' : '' %}
         <img class="analytics__big-image-background" src="{{ module.big_image.background.src }}" alt="{{ module.big_image.background.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+        {% endif %}
+        {% if module.big_image.top.src %}
+          {% set loadingAttr = module.big_image.top.loading != 'disabled' ? 'loading="{{ module.big_image.top.loading }}"' : '' %}
+        <img class="analytics__big-image-top" src="{{ module.big_image.top.src }}" alt="{{ module.big_image.top.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
         {% endif %}
         {% if module.big_image.image_field.src %}
           {% set loadingAttr = module.big_image.image_field.loading != 'disabled' ? 'loading="{{ module.big_image.image_field.loading }}"' : '' %}

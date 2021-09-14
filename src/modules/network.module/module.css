@@ -7,6 +7,10 @@ section.network{
     margin-top:150px;
 }
 
+.network img{
+    margin-left: -50px;
+}
+
 @media(max-width: 767px) {
     section.network{
         padding-bottom:80px;
@@ -14,5 +18,9 @@ section.network{
     
     .network__header{
         margin-top:50px;
+    }
+
+    .network img{
+        margin-left: 0;
     }
 }

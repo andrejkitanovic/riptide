@@ -1,5 +1,6 @@
 section.contact{
     margin-bottom:20px;
+    padding-bottom: 40px;
 }
 
 .contact__header,.contact__text{
@@ -75,12 +76,14 @@ section.contact form textarea {
     border-radius: 0;
     border-bottom: 1px solid #fff;
     outline:#fff;
-    color:#FF8363;
+    color:#fff;
     padding-left:42px;
+    font-weight: bold;
 }
 
 section.contact form input::placeholder {
     color:#CCCCCC;
+    font-weight: normal;
 }
 
 section.contact form .hs-richtext p{

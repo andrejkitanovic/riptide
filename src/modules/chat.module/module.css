@@ -5,29 +5,16 @@ section.chat{
 
 .chat__header{
     margin-top:50px;
+    max-width: 450px;
 }
 
-.chat__icon{
-    max-width:90px;
+.chat__text{
+    max-width: 400px;
 }
 
-.chat__icon-circle{
-    width:90px;
-    height:90px;
-    border-radius:50%;
-    margin:0 auto;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    transition: background-color 0.2s ease-out;
-}
-
-.chat__icon-title{
-    font-size: 16px;
-    font-weight:600;
-    text-align:center;
-    margin-top:9px;
-    color:#3A3ADD;
+.chat__dots{
+    position: absolute;
+    right: 95%;
 }
 
 .chat__box{
@@ -69,6 +56,10 @@ section.chat{
         margin-top:0;
     }
 
+    .chat__dots{
+        display: none;
+    }
+
     .chat__box{
         margin-top:60px;
     }
@@ -78,6 +69,9 @@ section.chat{
         margin-bottom:16px;
     }
 
+}
+
+@media(max-width: 375px) {
     .chat__message-box{
         bottom:130px;
     }

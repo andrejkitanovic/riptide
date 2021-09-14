@@ -1,15 +1,39 @@
 section.hero{
-    padding-top:238px;
-    padding-bottom:120px
+    padding-top:80px;
+    padding-bottom:120px;
 }
 
 .hero__header-top{
     color:#FF8363;
+    max-width: 450px;
+}
+
+.hero__header-top div{
+    display: inline;
+}
+
+.hero__header-top span{
+    position: relative;
+    opacity:0;
+}
+
+.hero__header-top span::after{
+    content:'';
+    position: absolute;
+    width:100%;
+    height:1px;
+    background-color:#FF8363;
+    bottom:-8px;
+    left:0;
+}
+
+.hero__header-bottom{
+    max-width: 350px;
 }
 
 @media(max-width: 767px) {
     section.hero{
-        padding-top:80px;
+        padding-top:60px;
         padding-bottom:80px;
     }
 
@@ -19,5 +43,11 @@ section.hero{
 
     .hero__image{
         margin-top:80px;
+    }
+}
+
+@media(max-width: 375px) {
+    .hero__header-top{
+        min-height:135px;
     }
 }

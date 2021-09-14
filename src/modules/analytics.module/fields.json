@@ -94,6 +94,22 @@
       "loading" : "lazy"
     }
   }, {
+    "id" : "41b950d5-8ad2-aa41-90a9-84a4ebacfbba",
+    "name" : "top",
+    "label" : "Top",
+    "required" : false,
+    "locked" : false,
+    "responsive" : true,
+    "resizable" : true,
+    "show_loading" : false,
+    "type" : "image",
+    "default" : {
+      "size_type" : "auto",
+      "src" : "",
+      "alt" : null,
+      "loading" : "lazy"
+    }
+  }, {
     "id" : "6e4f93ad-d149-6c69-419e-c170dcaeda3f",
     "name" : "image_field",
     "label" : "Image",
@@ -115,6 +131,12 @@
   "type" : "group",
   "default" : {
     "background" : {
+      "size_type" : "auto",
+      "src" : "",
+      "alt" : null,
+      "loading" : "lazy"
+    },
+    "top" : {
       "size_type" : "auto",
       "src" : "",
       "alt" : null,

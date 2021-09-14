@@ -1,6 +1,6 @@
 <section class="network">
   <div class="row-fluid">
-    <div class="span7">
+    <div class="span8">
       {% if module.image_field.src %}
         {% set sizeAttrs = 'width="{{ module.image_field.width }}" height="{{ module.image_field.height }}"' %}
         {% if module.image_field.size_type == 'auto' %}
@@ -12,7 +12,6 @@
         <img src="{{ module.image_field.src }}" alt="{{ module.image_field.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
       {% endif %}
     </div>
-    <div class="span1"></div>
     <div class="span4">
       <h2 class="network__header">{% inline_text field="header" value="{{ module.header }}" %}</h2>
       <div class="network__text">{% inline_rich_text field="text" value="{{ module.text }}" %}</div>

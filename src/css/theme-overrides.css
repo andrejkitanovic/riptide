@@ -254,6 +254,7 @@ button,
   /* color: {{ button_font.color }}; */
   text-transform: {{ button_text_transform }};
   color:#FFF;
+  font-weight:500;
 }
 
 .shallow-button{
@@ -265,6 +266,9 @@ button,
   font-weight:600;
   padding-top:9px;
   padding-bottom:9px;
+}
+
+.shallow-button:hover{
   background-color:#EEF7FF66;
 }
 
@@ -282,6 +286,7 @@ button:focus,
   {{ button_font.style }};
   background-color: rgba({{ color_variant(theme.buttons.background.color.color, -40)|convert_rgb }}, {{ theme.buttons.background.color.opacity / 100 }});
   border-color: {{ color_variant(theme.buttons.border.border.top.color, -40) }};
+  font-weight:500;
 }
 
 /* button:active,
