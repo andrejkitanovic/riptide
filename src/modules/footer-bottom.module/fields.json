@@ -1,0 +1,154 @@
+[ {
+  "id" : "a81c32e5-ab35-a894-bbf9-5972999c114a",
+  "name" : "copyright_text",
+  "label" : "Copyright Text",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "© 2019 - 2021 Riptide. All Rights Reserved"
+}, {
+  "id" : "2a22a699-a138-6342-bfb5-dbc3a7c3695d",
+  "name" : "terms",
+  "label" : "Terms",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "f6380f11-46de-7375-19f8-fc3f21df9cce",
+    "name" : "terms_text",
+    "label" : "Terms Text",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "Terms"
+  }, {
+    "id" : "2f8b3e77-3bd8-854c-4d50-d0a7fc6e2e29",
+    "name" : "terms_url",
+    "label" : "Terms URL",
+    "required" : false,
+    "locked" : false,
+    "supported_types" : [ "CONTENT" ],
+    "type" : "url",
+    "default" : {
+      "content_id" : null,
+      "href" : "",
+      "type" : "CONTENT"
+    }
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group",
+  "default" : {
+    "terms_text" : "Terms",
+    "terms_url" : {
+      "content_id" : null,
+      "href" : "",
+      "type" : "CONTENT"
+    }
+  }
+}, {
+  "id" : "7d7a9681-5c5b-1593-10a2-3af0fe27ab87",
+  "name" : "privacy",
+  "label" : "Privacy",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "20934c67-c243-55c7-4527-d5b5211f8ad0",
+    "name" : "privacy_text",
+    "label" : "Privacy Text",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "Privacy"
+  }, {
+    "id" : "1cb8a222-d6ae-4d38-dc56-5b19e6a8ca1d",
+    "name" : "privacy_url",
+    "label" : "Privacy URL",
+    "required" : false,
+    "locked" : false,
+    "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG" ],
+    "type" : "url",
+    "default" : {
+      "content_id" : null,
+      "href" : "",
+      "type" : "EXTERNAL"
+    }
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group",
+  "default" : {
+    "privacy_text" : "Privacy",
+    "privacy_url" : {
+      "content_id" : null,
+      "href" : "",
+      "type" : "EXTERNAL"
+    }
+  }
+}, {
+  "id" : "1b48e5f4-82d7-42aa-b121-2778323e1868",
+  "name" : "social",
+  "label" : "Social",
+  "required" : false,
+  "locked" : false,
+  "occurrence" : {
+    "min" : null,
+    "max" : null,
+    "sorting_label_field" : null,
+    "default" : null
+  },
+  "children" : [ {
+    "id" : "8d7f46bb-e944-04a6-d7e1-1f28f6af26a4",
+    "name" : "social_url",
+    "label" : "Social URL",
+    "required" : false,
+    "locked" : false,
+    "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG" ],
+    "type" : "url",
+    "default" : {
+      "content_id" : null,
+      "href" : "",
+      "type" : "EXTERNAL"
+    }
+  }, {
+    "id" : "0dd5a951-e6ee-5662-4997-c91285b192c5",
+    "name" : "social_image",
+    "label" : "Social Image",
+    "required" : false,
+    "locked" : false,
+    "responsive" : true,
+    "resizable" : true,
+    "show_loading" : false,
+    "type" : "image",
+    "default" : {
+      "size_type" : "auto",
+      "src" : "",
+      "alt" : null,
+      "loading" : "lazy"
+    }
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group",
+  "default" : {
+    "social_url" : {
+      "content_id" : null,
+      "href" : "",
+      "type" : "EXTERNAL"
+    },
+    "social_image" : {
+      "size_type" : "auto",
+      "src" : "",
+      "alt" : null,
+      "loading" : "lazy"
+    }
+  }
+} ]

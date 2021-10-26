@@ -1,0 +1,85 @@
+[ {
+  "id" : "36ca3f8a-872e-611c-460a-766a6ef8c695",
+  "name" : "button",
+  "label" : "Button",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "8cb73199-097b-9306-6f90-8b6a96df8cd8",
+    "name" : "button_text",
+    "label" : "Button Text",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "Talk to Riptide"
+  }, {
+    "id" : "1009e756-3767-bc22-46f4-1871c73cd290",
+    "name" : "button_url",
+    "label" : "Button URL",
+    "required" : false,
+    "locked" : false,
+    "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG" ],
+    "type" : "url",
+    "default" : {
+      "type" : "EXTERNAL",
+      "href" : "#contact-form",
+      "content_id" : null
+    }
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group",
+  "default" : {
+    "button_text" : "Talk to Riptide",
+    "button_url" : {
+      "type" : "EXTERNAL",
+      "href" : "#contact-form",
+      "content_id" : null
+    }
+  }
+}, {
+  "id" : "25943bbf-b151-2f0e-f22a-6bf397cc4467",
+  "name" : "link",
+  "label" : "Link",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "4497778c-0cdb-4db6-ebf4-eb86e601b657",
+    "name" : "link_text",
+    "label" : "Link Text",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "Sign In"
+  }, {
+    "id" : "67eb1af3-0205-e102-8a5a-177ba6072f65",
+    "name" : "link_url",
+    "label" : "Link URL",
+    "required" : false,
+    "locked" : false,
+    "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG" ],
+    "type" : "url",
+    "default" : {
+      "type" : "EXTERNAL",
+      "href" : "https://my.riptidehq.com/",
+      "content_id" : null
+    }
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group",
+  "default" : {
+    "link_text" : "Sign In",
+    "link_url" : {
+      "type" : "EXTERNAL",
+      "href" : "https://my.riptidehq.com/",
+      "content_id" : null
+    }
+  }
+} ]

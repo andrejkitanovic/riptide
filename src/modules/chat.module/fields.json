@@ -76,11 +76,27 @@
     }
   }
 }, {
+  "id" : "0f03ad23-3185-c49e-75e5-81b49883ad1e",
+  "name" : "is_gif",
+  "label" : "Is GIF",
+  "required" : false,
+  "locked" : false,
+  "display" : "toggle",
+  "type" : "boolean",
+  "default" : false
+}, {
   "id" : "421a6984-3779-3870-5096-950a2c300d24",
   "name" : "messages",
   "label" : "Messages",
   "required" : false,
   "locked" : false,
+  "visibility" : {
+    "controlling_field" : "0f03ad23-3185-c49e-75e5-81b49883ad1e",
+    "controlling_value_regex" : "false",
+    "operator" : "EQUAL",
+    "access" : null,
+    "hidden_subfields" : null
+  },
   "children" : [ {
     "id" : "11dc270d-78c6-0a9d-7a0d-99545045c577",
     "name" : "first_message",
@@ -218,5 +234,28 @@
       "alt" : null,
       "loading" : "lazy"
     }
+  }
+}, {
+  "id" : "aa864f10-030a-3841-67b0-68d0b3f3d4b0",
+  "name" : "gif",
+  "label" : "GIF",
+  "required" : false,
+  "locked" : false,
+  "visibility" : {
+    "controlling_field" : "0f03ad23-3185-c49e-75e5-81b49883ad1e",
+    "controlling_value_regex" : "true",
+    "operator" : "EQUAL",
+    "access" : null,
+    "hidden_subfields" : null
+  },
+  "responsive" : true,
+  "resizable" : true,
+  "show_loading" : false,
+  "type" : "image",
+  "default" : {
+    "size_type" : "auto",
+    "src" : "",
+    "alt" : null,
+    "loading" : "lazy"
   }
 } ]

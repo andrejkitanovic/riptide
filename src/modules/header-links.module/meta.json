@@ -1,7 +1,7 @@
 {
   "global" : false,
   "host_template_types" : [ "PAGE" ],
-  "module_id" : 55928693534,
-  "label" : "Hero",
+  "module_id" : 58246135310,
+  "label" : "Header Links",
   "is_available_for_new_content" : true
 }

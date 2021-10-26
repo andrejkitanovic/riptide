@@ -1,6 +1,8 @@
 section.chat{
     margin-top:115px;
     margin-bottom:110px;
+    max-width: 100%;
+    overflow: hidden;
 }
 
 .chat__header{
@@ -23,6 +25,10 @@ section.chat{
     max-width:505px;
     margin:0 auto;
     overflow: hidden;
+}
+
+.chat__box-gif{
+    max-width: 100%;
 }
 
 .chat__box img{

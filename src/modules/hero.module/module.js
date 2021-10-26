@@ -7,7 +7,7 @@ if (gsap) {
     const changableWord = $('.hero__header-top > span');
 
     if (hero.length > 0) {
-      const words = ['Worry','Stress','Panic'];
+      const words = $(changableWord).attr('data-words').split(',');
 
       const ease = 'power4';
       const durationPerSlide = 0.8;

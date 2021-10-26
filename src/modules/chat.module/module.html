@@ -16,35 +16,44 @@
     </div>
     <div class="span7">
       <div class="chat__box">
-        {% if module.messages.first_message.src %}
-           {% set loadingAttr = module.messages.first_message.loading != 'disabled' ? 'loading="{{ module.messages.first_message.loading }}"' : '' %}
-          <img class="chat__message-1" src="{{ module.messages.first_message.src }}" alt="{{ module.messages.first_message.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+        {% if module.is_gif %}
+          {% if module.gif.src %}
+             {% set loadingAttr = module.gif.loading != 'disabled' ? 'loading="{{ module.gif.loading }}"' : '' %}
+            <img class="chat__box-gif" src="{{ module.gif.src }}" alt="{{ module.gif.alt }}" {{ loadingAttr }}>
+          {% endif %}
+        {% else %}
+        <span class="chat__box-messages">
+          {% if module.messages.first_message.src %}
+             {% set loadingAttr = module.messages.first_message.loading != 'disabled' ? 'loading="{{ module.messages.first_message.loading }}"' : '' %}
+            <img class="chat__message-1" src="{{ module.messages.first_message.src }}" alt="{{ module.messages.first_message.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+          {% endif %}
+
+          {% if module.messages.second_message.src %}
+             {% set loadingAttr = module.messages.second_message.loading != 'disabled' ? 'loading="{{ module.messages.second_message.loading }}"' : '' %}
+            <img class="chat__message-2" src="{{ module.messages.second_message.src }}" alt="{{ module.messages.second_message.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+          {% endif %}
+
+          {% if module.messages.third_message.src %}
+             {% set loadingAttr = module.messages.third_message.loading != 'disabled' ? 'loading="{{ module.messages.third_message.loading }}"' : '' %}
+            <img class="chat__message-3" src="{{ module.messages.third_message.src }}" alt="{{ module.messages.third_message.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+          {% endif %}
+
+          {% if module.messages.fourth_message.src %}
+             {% set loadingAttr = module.messages.fourth_message.loading != 'disabled' ? 'loading="{{ module.messages.fourth_message.loading }}"' : '' %}
+            <img class="chat__message-4" src="{{ module.messages.fourth_message.src }}" alt="{{ module.messages.fourth_message.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+          {% endif %}
+
+          {% if module.messages.fifth_message.src %}
+             {% set loadingAttr = module.messages.fifth_message.loading != 'disabled' ? 'loading="{{ module.messages.fifth_message.loading }}"' : '' %}
+            <img class="chat__message-5" src="{{ module.messages.fifth_message.src }}" alt="{{ module.messages.fifth_message.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+          {% endif %}
+
+          {% if module.messages.chat_box.src %}
+             {% set loadingAttr = module.messages.chat_box.loading != 'disabled' ? 'loading="{{ module.messages.chat_box.loading }}"' : '' %}
+            <!-- <img class="chat__message-box" src="{{ module.messages.chat_box.src }}" alt="{{ module.messages.chat_box.alt }}" {{ loadingAttr }} {{ sizeAttrs }}> -->
+          {% endif %}
         {% endif %}
-        
-        {% if module.messages.second_message.src %}
-           {% set loadingAttr = module.messages.second_message.loading != 'disabled' ? 'loading="{{ module.messages.second_message.loading }}"' : '' %}
-          <img class="chat__message-2" src="{{ module.messages.second_message.src }}" alt="{{ module.messages.second_message.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
-        {% endif %}
-        
-        {% if module.messages.third_message.src %}
-           {% set loadingAttr = module.messages.third_message.loading != 'disabled' ? 'loading="{{ module.messages.third_message.loading }}"' : '' %}
-          <img class="chat__message-3" src="{{ module.messages.third_message.src }}" alt="{{ module.messages.third_message.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
-        {% endif %}
-        
-        {% if module.messages.fourth_message.src %}
-           {% set loadingAttr = module.messages.fourth_message.loading != 'disabled' ? 'loading="{{ module.messages.fourth_message.loading }}"' : '' %}
-          <img class="chat__message-4" src="{{ module.messages.fourth_message.src }}" alt="{{ module.messages.fourth_message.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
-        {% endif %}
-        
-        {% if module.messages.fifth_message.src %}
-           {% set loadingAttr = module.messages.fifth_message.loading != 'disabled' ? 'loading="{{ module.messages.fifth_message.loading }}"' : '' %}
-          <img class="chat__message-5" src="{{ module.messages.fifth_message.src }}" alt="{{ module.messages.fifth_message.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
-        {% endif %}
-        
-        {% if module.messages.chat_box.src %}
-           {% set loadingAttr = module.messages.chat_box.loading != 'disabled' ? 'loading="{{ module.messages.chat_box.loading }}"' : '' %}
-          <img class="chat__message-box" src="{{ module.messages.chat_box.src }}" alt="{{ module.messages.chat_box.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
-        {% endif %}
+          </span>
       </div>
       </div>
     </div>

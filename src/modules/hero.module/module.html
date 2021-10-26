@@ -3,7 +3,9 @@
     <div class="span5">
       <h1 class="hero__header-top">
         {% inline_text field="header_top" value="{{ module.header_top }}" %}
-        <span>Anxiety</span>
+        <span data-words="{% for item in module.header_changing_words %}{% if loop.index != 1 %}{{item.word}}{% if !loop.last %},{% endif %}{% endif %}{% endfor %}">
+          {{ module.header_changing_words[0].word }}
+        </span>
       </h1>
       <h1 class="hero__header-bottom">
         {% inline_text field="header_bottom" value="{{ module.header_bottom }}" %}
@@ -29,14 +31,8 @@
     <div class="span1"></div>
     <div class="span6">
         {% if module.image_field.src %}
-          {% set sizeAttrs = 'width="{{ module.image_field.width }}" height="{{ module.image_field.height }}"' %}
-          {% if module.image_field.size_type == 'auto' %}
-            {% set sizeAttrs = 'style="max-width: 100%; height: auto;"' %}
-          {% elif module.image_field.size_type == 'auto_custom_max' %}
-            {% set sizeAttrs = 'width="{{ module.image_field.max_width }}" height="{{ module.image_field.max_height }}" style="max-width: 100%; height: auto;"' %}
-          {% endif %}
            {% set loadingAttr = module.image_field.loading != 'disabled' ? 'loading="{{ module.image_field.loading }}"' : '' %}
-          <img class="hero__image" src="{{ module.image_field.src }}" alt="{{ module.image_field.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+          <img class="hero__image" src="{{ module.image_field.src }}" alt="{{ module.image_field.alt }}" {{ loadingAttr }}>
         {% endif %}
     </div>
   </div>

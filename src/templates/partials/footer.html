@@ -7,7 +7,7 @@
     <div class="row-fluid">
       <div class="span4">
         <div class="footer__logo footer__logo--main">
-        {% module 'site_logo' path='@hubspot/logo' %}
+          {% module "linked_image" path="@hubspot/linked_image" %}
         </div>
       </div>
       <div class="span4">
@@ -28,41 +28,12 @@
         <a class="footer__link" href="mailto:hello@riptidehq.com">
         hello@riptidehq.com
         </a>
-        <a class="footer__link" href="#">
+        <a class="footer__link" href="tel:888-435-6324">
         +1 888-RIP-TIDE <span>(888-435-6324)</span>
         </a>
       </div>
     </div>
   </div>
 
-  <div class="footer__bottom">
-      <div class="content-wrapper">
-        <div class="row-fluid">
-          <div class="span4">
-            <div class="footer__bottom-text">
-            © 2019 - 2021 Riptide. All Rights Reserved
-            </div>
-          </div>
-          <div class="span4">
-            <a class="footer__bottom-text" href="#">
-            Terms
-            </a>
-            <div class="footer__bottom-text">
-            |
-            </div>
-            <a class="footer__bottom-text" href="#">
-            Privacy
-            </a>
-          </div>
-          <div class="span4">
-            <a class="footer__social" href="#">
-              <img src="https://f.hubspotusercontent10.net/hubfs/9346563/Social/twitter.svg" alt="Twitter">
-            </a>
-            <a class="footer__social" href="#">
-              <img src="https://f.hubspotusercontent10.net/hubfs/9346563/Social/linkedin.svg" alt="Linkedin">
-            </a>
-          </div>
-        </div>
-      </div>
-  </div>
+  {% module 'footer_bottom' path='../../modules/footer-bottom' %}
 </footer>

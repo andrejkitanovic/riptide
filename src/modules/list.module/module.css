@@ -40,7 +40,7 @@ section.list{
     text-align:center;
     margin-top:24px;
     color:#3A3ADD;
-    opacity:0;
+    /* opacity:0; */
     transition: opacity 0.2s ease-out;
 }
 
@@ -56,9 +56,9 @@ section.list{
     filter:brightness(10);
 }
 
-.list__item:hover .list__item-description{
+/* .list__item:hover .list__item-description{
     opacity:1;
-}
+} */
 
 @media(max-width: 767px) {
     section.list{

@@ -11,6 +11,33 @@
   "type" : "text",
   "default" : ""
 }, {
+  "id" : "56ba22a7-aa76-9df7-c6e9-793bbc599efa",
+  "name" : "header_changing_words",
+  "label" : "Header Changing Words",
+  "required" : false,
+  "locked" : false,
+  "occurrence" : {
+    "min" : null,
+    "max" : null,
+    "sorting_label_field" : null,
+    "default" : null
+  },
+  "children" : [ {
+    "id" : "8086604f-2f26-5600-235f-a43ff2b306b6",
+    "name" : "word",
+    "label" : "Word",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text"
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group",
+  "default" : { }
+}, {
   "id" : "f66180dc-06be-432a-b917-71743bb7e3ef",
   "name" : "header_bottom",
   "label" : "Header Bottom",
@@ -39,6 +66,7 @@
   "required" : false,
   "locked" : false,
   "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG" ],
+  "show_advanced_rel_options" : false,
   "type" : "link",
   "default" : {
     "url" : {

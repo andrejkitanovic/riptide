@@ -63,6 +63,10 @@
   font-size: 18px;
 }
 
+.header__signin div{
+  display: inline;
+}
+
 
 @media screen and (max-width: 1180px) {
   .header__contact{
