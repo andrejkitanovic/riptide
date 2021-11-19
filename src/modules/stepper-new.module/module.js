@@ -1,10 +1,10 @@
 'use strict';
 
 if (gsap) {
-  $(function () {
-    const stepper = $('.stepper-new');
+//   $(function () {
+    const stepper = document.querySelectorAll('.stepper-new');
 
-    const steps = $('.stepper-new__step');
+    const steps = document.querySelectorAll('.stepper-new__step');
 
     if (stepper.length > 0) {
       var tl = gsap.timeline({
@@ -24,5 +24,5 @@ if (gsap) {
 
     
     }
-  });
+//   });
 }

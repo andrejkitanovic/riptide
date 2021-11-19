@@ -1,13 +1,13 @@
 'use strict';
 
 if (gsap) {
-  $(function () {
-    const hero = $('.hero');
+//   $(function () {
+    const hero = document.querySelectorAll('.hero');
 
-    const changableWord = $('.hero__header-top > span');
+    const changableWord = document.querySelector('.hero__header-top > span');
 
     if (hero.length > 0) {
-      const words = $(changableWord).attr('data-words').split(',');
+      const words = changableWord.getAttribute('data-words').split(',');
 
       const ease = 'power4';
       const durationPerSlide = 0.8;
@@ -48,5 +48,5 @@ if (gsap) {
         })
      
     }
-  });
+//   });
 }

@@ -1,7 +1,7 @@
 'use strict';
 
 if (gsap) {
-  $(function () {
+//   $(function () {
     let start = "-=150";
     let end = "+=1500";
 
@@ -10,17 +10,17 @@ if (gsap) {
       end = "+=2000"
     }
 
-    const chat = $('.chat');
+    const chat = document.querySelector('.chat');
 
-    const chatBox = $('.chat__box');
-    const chatBoxMessages = $('.chat__box-messages');
+    const chatBox = document.querySelector('.chat__box');
+    const chatBoxMessages = document.querySelectorAll('.chat__box-messages');
     // const messageBox = $('.chat__message-box');
 
-    const chatMessage1 = $('.chat__message-1');
-    const chatMessage2 = $('.chat__message-2');
-    const chatMessage3 = $('.chat__message-3');
-    const chatMessage4 = $('.chat__message-4');
-    const chatMessage5 = $('.chat__message-5');
+    const chatMessage1 = document.querySelector('.chat__message-1');
+    const chatMessage2 = document.querySelector('.chat__message-2');
+    const chatMessage3 = document.querySelector('.chat__message-3');
+    const chatMessage4 = document.querySelector('.chat__message-4');
+    const chatMessage5 = document.querySelector('.chat__message-5');
 
     if (chatBoxMessages.length > 0) {
       // const durationPerSlide = 0.8;
@@ -51,5 +51,5 @@ if (gsap) {
         )
         .from(chatMessage5, { x: 30, autoAlpha: 0, ease: ease });
     }
-  });
+//   });
 }

@@ -31,6 +31,10 @@ section.hero{
     max-width: 350px;
 }
 
+.hero__image{
+  max-width:100%;
+}
+
 @media(max-width: 767px) {
     section.hero{
         padding-top:60px;

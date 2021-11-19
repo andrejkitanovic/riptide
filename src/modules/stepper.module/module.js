@@ -1,14 +1,14 @@
 'use strict';
 
 if (gsap) {
-  $(function () {
-    const stepper = $('.stepper');
+//   $(function () {
+    const stepper = document.querySelectorAll('.stepper');
 
-    const image1 = $('.stepper__image-1');
-    const arrow1 = $('.stepper__arrow-1');
-    const image2 = $('.stepper__image-2');
-    const arrow2 = $('.stepper__arrow-2');
-    const image3 = $('.stepper__image-3');
+    const image1 = document.querySelector('.stepper__image-1');
+    const arrow1 = document.querySelector('.stepper__arrow-1');
+    const image2 = document.querySelector('.stepper__image-2');
+    const arrow2 = document.querySelector('.stepper__arrow-2');
+    const image3 = document.querySelector('.stepper__image-3');
 
     if (stepper.length > 0) {
       var tl = gsap.timeline({
@@ -55,5 +55,5 @@ if (gsap) {
         duration: 0.5,
       });
     }
-  });
+//   });
 }

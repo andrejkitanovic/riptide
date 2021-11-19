@@ -58,7 +58,7 @@ section.analytics{
 @media(max-width: 767px) {
     section.analytics {
         padding-top: 50px;
-        padding-bottom: 180px;
+        padding-bottom: 60px;
     }
 
     .analytics__text{
@@ -68,6 +68,7 @@ section.analytics{
     .analytics__small-image-background{
         right:0;
         max-width:280px;
+
     }
 
     .analytics__small-image-picture{
@@ -82,14 +83,27 @@ section.analytics{
     }
 
     .analytics__big-image-background {
-        top: 70px;
+        /* top: 70px;
         left: -15px;
-        max-width: 100%;
+        max-width: 100%; */
+        display:none;
+    }
+
+    .analytics__big-image{
+        height:600px;
     }
 
     .analytics__big-image-top{
         top: 0;
-        left: 20px;
-        max-width: 250px;
+        /* left: 20px;
+        max-width: 250px; */
+        left:0;
+        max-width:100%;
+    }
+
+    /* TO DELETE */
+    .analytics__big-image-picture{
+        top:auto;
+        bottom:0;
     }
 }

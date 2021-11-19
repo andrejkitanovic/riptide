@@ -43,6 +43,10 @@ section.stepper-new{
   margin:0 auto 100px;
 }
 
+.stepper-new__step-image img{
+  max-width:100%;
+}
+
 @media screen and (max-width: 1180px) {
   .stepper-new__steps{
    height:auto;
@@ -58,5 +62,7 @@ section.stepper-new{
 }
 
 @media screen and (max-width: 767px) {
-   
+  .stepper-new__steps{
+     background-color:transparent;
+  }
 }

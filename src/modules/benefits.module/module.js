@@ -1,10 +1,10 @@
 'use strict';
 
 if (gsap) {
-  $(function () {
-    const benefits = $('.benefits');
+//   document.onreadystatechange = function () {
+    const benefits = document.querySelectorAll('.benefits');
 
-    const benefitsItem = $('.benefits__item');
+    const benefitsItem = document.querySelectorAll('.benefits__item');
 
     if (benefits.length > 0) {
         var tl = gsap.timeline({
@@ -13,15 +13,18 @@ if (gsap) {
                 start:'top-=150',
             }
           });
-    
-          tl.from(benefitsItem, {
+      
+//         benefitsItem.forEach((item,index) => {
+         tl.from(benefitsItem, {
             autoAlpha: 0,
             ease: 'power3',
             y:20,
             stagger: 0.3,
             duration: 0.3,
           });
+//         })
+         
     
     }
-  });
+//   };
 }
