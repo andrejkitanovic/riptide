@@ -71,7 +71,8 @@ section.chat{
     }
 
     .chat__box img{
-        max-width:80%;
+        width: 100%;
+        max-width:350px;
         margin-bottom:16px;
     }
 

@@ -34,6 +34,15 @@
           {% set loadingAttr = module.big_image.image_field.loading != 'disabled' ? 'loading="{{ module.big_image.image_field.loading }}"' : '' %}
         <img class="analytics__big-image-picture" src="{{ module.big_image.image_field.src }}" alt="{{ module.big_image.image_field.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
         {% endif %}
+        
+        {% if module.big_image_mobile.top_image.src %}
+           {% set loadingAttr = module.big_image_mobile.top_image.loading != 'disabled' ? 'loading="{{ module.big_image_mobile.top_image.loading }}"' : '' %}
+          <img class="analytics__big-image-mobile-top" src="{{ module.big_image_mobile.top_image.src }}" alt="{{ module.big_image_mobile.top_image.alt }}" {{ loadingAttr }} >
+        {% endif %}
+         {% if module.big_image_mobile.bottom_image.src %}
+           {% set loadingAttr = module.big_image_mobile.bottom_image.loading != 'disabled' ? 'loading="{{ module.big_image_mobile.bottom_image.loading }}"' : '' %}
+          <img class="analytics__big-image-mobile-bottom" src="{{ module.big_image_mobile.bottom_image.src }}" alt="{{ module.big_image_mobile.bottom_image.alt }}" {{ loadingAttr }} >
+        {% endif %}
       </div>
   </div>
 </section>

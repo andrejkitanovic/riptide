@@ -8,24 +8,59 @@
   </div>
   <div class="row-fluid">
  
-    {% for item in module.list %}
-    <div class="span2">
-      <div class="list__item">
-          <div class="list__item-circle" style="background-color:{{ item.color_field.color }}">
-            {% if item.list_image.src %}
-               {% set loadingAttr = item.list_image.loading != 'disabled' ? 'loading="{{ item.list_image.loading }}"' : '' %}
-               <img src="{{ item.list_image.src }}" alt="{{ item.list_image.alt }}" {{ loadingAttr }}>
-	          {% endif %}
-          </div>
-          <div class="list__item-title">
-            {% inline_text field="list_text" value="{{ item.list_text }}" %}
-          </div>
-          <div class="list__item-description">
-            {% inline_text field="list_description" value="{{ item.list_description }}" %}
-          </div>
+    <div class="list__desktop">
+      {% for item in module.list %}
+      <div class="span2">
+        <div class="list__item">
+            <div class="list__item-circle" style="background-color:{{ item.color_field.color }}">
+              {% if item.list_image.src %}
+                {% set loadingAttr = item.list_image.loading != 'disabled' ? 'loading="{{ item.list_image.loading }}"' : '' %}
+                <img src="{{ item.list_image.src }}" alt="{{ item.list_image.alt }}" {{ loadingAttr }}>
+              {% endif %}
+            </div>
+            <div class="list__item-title">
+              {% inline_text field="list_text" value="{{ item.list_text }}" %}
+            </div>
+            <div class="list__item-description">
+              {% inline_text field="list_description" value="{{ item.list_description }}" %}
+            </div>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+
+    <div class="list__mobile">
+      <div class="swiper">
+        <div class="swiper-wrapper">
+          {% for item in module.list %}
+            {% if (loop.index0 % 2 == 0) %}
+            <div class="swiper-slide">
+            {% endif %}
+              <div class="list__item">
+                <div class="list__item-circle-container">
+                  <div class="list__item-circle" style="background-color:{{ item.color_field.color }}">
+                    {% if item.list_image.src %}
+                      {% set loadingAttr = item.list_image.loading != 'disabled' ? 'loading="{{ item.list_image.loading }}"' : '' %}
+                      <img src="{{ item.list_image.src }}" alt="{{ item.list_image.alt }}" {{ loadingAttr }}>
+                    {% endif %}
+                  </div>
+                  <div class="list__item-title">
+                    {% inline_text field="list_text" value="{{ item.list_text }}" %}
+                  </div>
+                </div>
+                <div class="list__item-description">
+                  {% inline_text field="list_description" value="{{ item.list_description }}" %}
+                </div>
+              </div>
+            {% if (loop.index0 % 2 == 1 || loop.last) %}
+            </div>
+            {% endif %}
+          {% endfor %}
+        </div>
+
+        <div class="swiper-pagination"></div>
       </div>
     </div>
-    {% endfor %}
     
   </div>
 </section>

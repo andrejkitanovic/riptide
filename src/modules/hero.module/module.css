@@ -37,8 +37,10 @@ section.hero{
 
 @media(max-width: 767px) {
     section.hero{
+        position: relative;
         padding-top:60px;
         padding-bottom:80px;
+        padding-bottom: 300px;
     }
 
     section.hero .span6{
@@ -46,12 +48,18 @@ section.hero{
     }
 
     .hero__image{
-        margin-top:80px;
+        position: absolute;
+        bottom: -50px;
+        right: 0;
+        margin-right: -50px;
+        max-width: 300px;
     }
 }
 
 @media(max-width: 375px) {
     .hero__header-top{
-        min-height:135px;
+        min-height:80px;
+        margin-bottom:30px;
     }
+
 }

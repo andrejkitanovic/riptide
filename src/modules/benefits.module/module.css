@@ -23,11 +23,16 @@ section.benefits{
 }
 
 @media(max-width: 767px) {
+    .dnd-section.dnd_area-row-6-background-color{
+        background-color:#FFF!important;
+    }
+
     section.benefits{
+        position:relative;
         padding-top: 50px;
         padding-bottom:80px;
     }
-    
+
     .benefits__item{
         max-width:100%;
         margin-bottom:40px;
@@ -35,5 +40,9 @@ section.benefits{
 
     .benefits__item-icon{
         margin-bottom:15px;
+    }
+
+    .benefits__item-text{
+        margin-left:20px;
     }
 }

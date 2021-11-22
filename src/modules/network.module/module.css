@@ -13,14 +13,22 @@ section.network{
 
 @media(max-width: 767px) {
     section.network{
+        padding-top:40px;
         padding-bottom:80px;
+    }
+
+    .network .row-fluid{
+        display: flex;
+        flex-direction: column-reverse;
     }
     
     .network__header{
-        margin-top:50px;
+        /* margin-top:50px; */
+        margin-top: 0;
     }
 
     .network img{
+        margin-top: 50px;
         margin-left: 0;
     }
 }

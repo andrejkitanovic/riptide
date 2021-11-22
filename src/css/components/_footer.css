@@ -34,9 +34,26 @@
     height:23px;
 }
 
+.footer .d-desktop-none{
+    display:none;
+}
+
 @media(max-width: 767px) {
+    .footer__logo img{
+        width:108px !important;
+        margin-left:-8px;
+    }
+
     .footer .span4{
         margin-top:40px;
+    }
+
+    .footer .d-desktop-none{
+        display:block;
+    }
+
+    .footer .d-mobile-none{
+        display: none;
     }
 
     .footer{
@@ -44,7 +61,7 @@
     }
 
     .footer__bottom{
-        margin-top: 60px;
+        margin-top: 52px;
         text-align: center;
         padding:18px 0;
     }
@@ -59,5 +76,9 @@
 
     .footer__bottom .span4:last-of-type{
         margin:10px 0;
+    }
+
+    .footer__socials{
+        margin-top:40px;
     }
 }

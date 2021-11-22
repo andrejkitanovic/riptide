@@ -56,6 +56,10 @@ section.list{
     filter:brightness(10);
 }
 
+.list__mobile{
+    display: none;
+}
+
 /* .list__item:hover .list__item-description{
     opacity:1;
 } */
@@ -65,11 +69,42 @@ section.list{
         padding-bottom:20px;
     }
 
-    .list__item{
-        margin-bottom:30px;
+    .list__desktop{
+        display: none;
+    }
+
+    .list__mobile{
+        display: block;
+        width: 100%;
+    }
+
+    .list__mobile .swiper{
+        width: 100%;
+        height: 100%;
+    }
+    
+    .list__item-circle-container{
+        min-width: 100px;
+        margin-right: 20px;
     }
 
     .list__item-description{
-        opacity:1;
+        margin-top: 10px;
+        text-align: left;
+        color:#2E2E2E;
+    }
+
+    .list__item{
+        margin-bottom:30px;
+        display: flex;
+    }
+
+    .list__mobile .swiper-pagination{
+        position: relative;
+        margin: 10px 0;
+    }
+
+    .list__mobile .swiper-pagination .swiper-pagination-bullet-active{
+        background-color: #4438E0;
     }
 }

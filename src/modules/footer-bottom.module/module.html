@@ -1,3 +1,15 @@
+  <div class="footer__socials d-desktop-none">
+  {% for item in module.social %}
+              
+    {% if item.social_image.src %}
+       {% set loadingAttr = item.social_image.loading != 'disabled' ? 'loading="{{ item.social_image.loading }}"' : '' %}
+       <a class="footer__social" href="{{ item.social_url.href }}">
+          <img src="{{ item.social_image.src }}" alt="{{ item.social_image.alt }}" {{ loadingAttr }}>
+       </a>
+    {% endif %}
+  {% endfor %}
+  </div>
+
   <div class="footer__bottom">
     
       <div class="content-wrapper">
@@ -20,7 +32,7 @@
             {% inline_text field="privacy.privacy_text" value="{{ module.privacy.privacy_text }}" %}
             </a>
           </div>
-          <div class="span4">
+          <div class="span4 d-mobile-none">
             {% for item in module.social %}
               
               {% if item.social_image.src %}

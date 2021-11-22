@@ -149,4 +149,60 @@
       "loading" : "lazy"
     }
   }
+}, {
+  "id" : "ed4c7e44-e60b-be68-8615-da7ba2892091",
+  "name" : "big_image_mobile",
+  "label" : "Big Image Mobile",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "47d6451c-dfdf-7078-5b5f-619a2c3ffa76",
+    "name" : "top_image",
+    "label" : "Top Image",
+    "required" : false,
+    "locked" : false,
+    "responsive" : true,
+    "resizable" : true,
+    "show_loading" : false,
+    "type" : "image",
+    "default" : {
+      "size_type" : "auto",
+      "src" : "",
+      "alt" : null,
+      "loading" : "lazy"
+    }
+  }, {
+    "id" : "85d2bc7f-da40-6a51-b64c-5eaadbab032b",
+    "name" : "bottom_image",
+    "label" : "Bottom Image",
+    "required" : false,
+    "locked" : false,
+    "responsive" : true,
+    "resizable" : true,
+    "show_loading" : false,
+    "type" : "image",
+    "default" : {
+      "size_type" : "auto",
+      "src" : "",
+      "alt" : null,
+      "loading" : "lazy"
+    }
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group",
+  "default" : {
+    "top_image" : {
+      "size_type" : "auto",
+      "src" : "",
+      "alt" : null,
+      "loading" : "lazy"
+    },
+    "bottom_image" : {
+      "size_type" : "auto",
+      "src" : "",
+      "alt" : null,
+      "loading" : "lazy"
+    }
+  }
 } ]
