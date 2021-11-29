@@ -39,8 +39,7 @@ section.hero{
     section.hero{
         position: relative;
         padding-top:60px;
-        padding-bottom:80px;
-        padding-bottom: 300px;
+        padding-bottom: 350px;
     }
 
     section.hero .span6{
@@ -49,17 +48,26 @@ section.hero{
 
     .hero__image{
         position: absolute;
-        bottom: -50px;
+        bottom: -80px;
         right: 0;
         margin-right: -50px;
-        max-width: 300px;
+        max-width:400px;
     }
 }
 
 @media(max-width: 375px) {
+    section.hero{
+        padding-bottom:300px;
+    }
+
     .hero__header-top{
         min-height:80px;
         margin-bottom:30px;
+    }
+
+    .hero__image{
+        bottom:-50px;
+        max-width:300px;
     }
 
 }

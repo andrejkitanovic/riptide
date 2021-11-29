@@ -106,9 +106,15 @@ section.contact .submitted-message{
     font-weight:600;
 }
 
+@media(max-width: 1024px) {
+    .contact__image{
+        max-width:500px;
+    }
+}
+
 @media(max-width: 767px) {
     .contact__image{
-        max-width:100%;
+        max-width:400px;
     }
 
     .hs-form-field {
@@ -118,5 +124,11 @@ section.contact .submitted-message{
 
     section.contact form .hs-richtext p{
         margin-top:30px;
+    }
+}
+
+@media(max-width: 375px) {
+    .contact__image{
+        max-width:100%;
     }
 }
