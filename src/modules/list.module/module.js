@@ -1,32 +1,11 @@
-// 'use strict';
+'use strict';
 
-// if (gsap) {
-//   $(function () {
-//     const list = $('.list');
-//     const listItem = $('.list__item');
+const swiperObj = document.querySelector('.swiper');
 
-//     if (list.length > 0) {
-//       var tl = gsap.timeline({
-//         scrollTrigger: {
-//             trigger: list,
-//         }
-//       });
-
-//       tl.from(listItem, {
-//         autoAlpha: 0,
-//         ease: 'power3',
-//         y:20,
-//         stagger: 0.3,
-//         duration: 0.3,
-//       });
-
-//     }
-//   });
-// }
-
-const swiper = new Swiper('.swiper', {
+if (swiperObj) {
+  const swiper = new Swiper(swiperObj, {
     pagination: {
       el: '.swiper-pagination',
     },
-
   });
+}
