@@ -1,6 +1,7 @@
 [ {
   "id" : "e42bec30-8c36-5d1a-f3ab-aa670cfa648e",
   "name" : "header",
+  "display_width" : null,
   "label" : "Header",
   "required" : false,
   "locked" : false,
@@ -11,6 +12,7 @@
 }, {
   "id" : "b04a7de0-e598-07a1-5566-ed777b123e12",
   "name" : "text",
+  "display_width" : null,
   "label" : "Text",
   "required" : false,
   "locked" : false,
@@ -18,12 +20,14 @@
 }, {
   "id" : "ac5840e7-3610-cc7b-db13-37aa3341f3d1",
   "name" : "small_image",
+  "display_width" : null,
   "label" : "Small Image",
   "required" : false,
   "locked" : false,
   "children" : [ {
     "id" : "59de51a9-a839-738e-4c46-b611032b6872",
     "name" : "background",
+    "display_width" : null,
     "label" : "Background",
     "required" : false,
     "locked" : false,
@@ -40,6 +44,7 @@
   }, {
     "id" : "dc325e86-665a-5865-f085-7b4405d9d039",
     "name" : "image_field",
+    "display_width" : null,
     "label" : "Image",
     "required" : false,
     "locked" : false,
@@ -74,12 +79,14 @@
 }, {
   "id" : "65e4f035-9859-bb2f-6087-2e41d8f8e8d5",
   "name" : "big_image",
+  "display_width" : null,
   "label" : "Big Image",
   "required" : false,
   "locked" : false,
   "children" : [ {
     "id" : "02843c65-d8a5-ee13-2793-1a8e443a82b1",
     "name" : "background",
+    "display_width" : null,
     "label" : "Background",
     "required" : false,
     "locked" : false,
@@ -96,6 +103,7 @@
   }, {
     "id" : "41b950d5-8ad2-aa41-90a9-84a4ebacfbba",
     "name" : "top",
+    "display_width" : null,
     "label" : "Top",
     "required" : false,
     "locked" : false,
@@ -112,6 +120,7 @@
   }, {
     "id" : "6e4f93ad-d149-6c69-419e-c170dcaeda3f",
     "name" : "image_field",
+    "display_width" : null,
     "label" : "Image",
     "required" : false,
     "locked" : false,
@@ -152,12 +161,14 @@
 }, {
   "id" : "ed4c7e44-e60b-be68-8615-da7ba2892091",
   "name" : "big_image_mobile",
+  "display_width" : null,
   "label" : "Big Image Mobile",
   "required" : false,
   "locked" : false,
   "children" : [ {
     "id" : "47d6451c-dfdf-7078-5b5f-619a2c3ffa76",
     "name" : "top_image",
+    "display_width" : null,
     "label" : "Top Image",
     "required" : false,
     "locked" : false,
@@ -174,6 +185,7 @@
   }, {
     "id" : "85d2bc7f-da40-6a51-b64c-5eaadbab032b",
     "name" : "bottom_image",
+    "display_width" : null,
     "label" : "Bottom Image",
     "required" : false,
     "locked" : false,

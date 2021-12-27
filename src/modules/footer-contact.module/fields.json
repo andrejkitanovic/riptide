@@ -1,0 +1,58 @@
+[ {
+  "id" : "ada3f68f-5ca0-5007-9594-37726e079827",
+  "name" : "header",
+  "display_width" : null,
+  "label" : "Header",
+  "required" : false,
+  "locked" : true,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : " Contact Sales:"
+}, {
+  "id" : "73e0cded-4ca9-a990-d022-9f4bad41bc7b",
+  "name" : "link",
+  "display_width" : null,
+  "label" : "Link",
+  "required" : false,
+  "locked" : true,
+  "occurrence" : {
+    "min" : null,
+    "max" : null,
+    "sorting_label_field" : null,
+    "default" : 1
+  },
+  "children" : [ {
+    "id" : "c347b677-4c8c-56c3-b0d4-5bd19e2e31de",
+    "name" : "link_text",
+    "display_width" : null,
+    "label" : "Link Text",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "hello@riptidehq.com"
+  }, {
+    "id" : "5bc36853-75df-f36d-65b5-4526dc499886",
+    "name" : "link_url",
+    "display_width" : null,
+    "label" : "Link URL",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "mailto:hello@riptidehq.com"
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group",
+  "default" : [ {
+    "link_text" : "hello@riptidehq.com",
+    "link_url" : "mailto:hello@riptidehq.com"
+  } ]
+} ]

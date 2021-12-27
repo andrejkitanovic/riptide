@@ -1,6 +1,7 @@
 [ {
   "id" : "f23a1b6b-930d-a801-d4b4-ebe74a78184d",
   "name" : "header",
+  "display_width" : null,
   "label" : "Header",
   "required" : false,
   "locked" : false,
@@ -11,6 +12,7 @@
 }, {
   "id" : "aa1c2ec4-b8f3-f7a7-0097-dba3bd0f0660",
   "name" : "text",
+  "display_width" : null,
   "label" : "Text",
   "required" : false,
   "locked" : false,
@@ -18,6 +20,7 @@
 }, {
   "id" : "958376c3-403a-8482-3f83-55baa3974f7b",
   "name" : "button_text",
+  "display_width" : null,
   "label" : "Button Text",
   "required" : false,
   "locked" : false,
@@ -28,6 +31,7 @@
 }, {
   "id" : "a66a96c3-a5cf-8328-2e23-8b796caaafce",
   "name" : "button_link",
+  "display_width" : null,
   "label" : "Button Link",
   "required" : false,
   "locked" : false,
@@ -46,12 +50,14 @@
 }, {
   "id" : "61b7fb50-0e66-8d4a-e2b0-19c7d937cebb",
   "name" : "images",
+  "display_width" : null,
   "label" : "Images",
   "required" : false,
   "locked" : false,
   "children" : [ {
     "id" : "fa2625a7-a42f-fc12-0768-c3278c3a1a55",
     "name" : "background_image",
+    "display_width" : null,
     "label" : "Background Image",
     "required" : false,
     "locked" : false,
@@ -68,6 +74,7 @@
   }, {
     "id" : "ddb50050-4c4a-4b37-382a-7967be6b57d8",
     "name" : "first_image",
+    "display_width" : null,
     "label" : "First Image",
     "required" : false,
     "locked" : false,
@@ -84,6 +91,7 @@
   }, {
     "id" : "48584b0e-2e7d-cd3c-243b-b5e8018c4baa",
     "name" : "first_arrow",
+    "display_width" : null,
     "label" : "First Arrow",
     "required" : false,
     "locked" : false,
@@ -100,6 +108,7 @@
   }, {
     "id" : "efb19a6d-d914-b7f3-ec3e-07661f05b419",
     "name" : "second_image",
+    "display_width" : null,
     "label" : "Second Image",
     "required" : false,
     "locked" : false,
@@ -116,6 +125,7 @@
   }, {
     "id" : "1a6d152e-0751-12e4-d7f4-edf3c1a05315",
     "name" : "second_arrow",
+    "display_width" : null,
     "label" : "Second Arrow",
     "required" : false,
     "locked" : false,
@@ -132,6 +142,7 @@
   }, {
     "id" : "eb77f31a-8db3-7e1b-cfa9-f08261b2f85f",
     "name" : "third_image",
+    "display_width" : null,
     "label" : "Third Image",
     "required" : false,
     "locked" : false,

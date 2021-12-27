@@ -30,8 +30,11 @@
     </div>
 
     <div class="list__mobile">
+      
+      {% if module.swiper %}
       <div class="swiper">
         <div class="swiper-wrapper">
+          {% endif %}
           {% for item in module.list %}
             {% if (loop.index0 % 2 == 0) %}
             <div class="swiper-slide">
@@ -57,10 +60,12 @@
             {% endif %}
           {% endfor %}
         </div>
-
+        
+        {% if module.swiper %}
         <div class="swiper-pagination"></div>
       </div>
     </div>
+    {% endif %}
     
   </div>
 </section>

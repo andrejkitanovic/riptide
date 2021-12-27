@@ -1,6 +1,7 @@
 [ {
   "id" : "3c78e3ba-1a14-a2a8-ccf0-62edba233a5f",
   "name" : "header_top",
+  "display_width" : null,
   "label" : "Header Top",
   "required" : false,
   "locked" : false,
@@ -13,6 +14,7 @@
 }, {
   "id" : "56ba22a7-aa76-9df7-c6e9-793bbc599efa",
   "name" : "header_changing_words",
+  "display_width" : null,
   "label" : "Header Changing Words",
   "required" : false,
   "locked" : false,
@@ -25,6 +27,7 @@
   "children" : [ {
     "id" : "8086604f-2f26-5600-235f-a43ff2b306b6",
     "name" : "word",
+    "display_width" : null,
     "label" : "Word",
     "required" : false,
     "locked" : false,
@@ -40,6 +43,7 @@
 }, {
   "id" : "f66180dc-06be-432a-b917-71743bb7e3ef",
   "name" : "header_bottom",
+  "display_width" : null,
   "label" : "Header Bottom",
   "required" : false,
   "locked" : false,
@@ -52,6 +56,7 @@
 }, {
   "id" : "8e83f8be-de5d-3a17-1edc-8de6655a1f25",
   "name" : "button_text",
+  "display_width" : null,
   "label" : "Button Text",
   "required" : false,
   "locked" : false,
@@ -62,6 +67,7 @@
 }, {
   "id" : "3ab2731c-78ce-7c92-cf63-f1e87eec1d00",
   "name" : "link_field",
+  "display_width" : null,
   "label" : "Button Link",
   "required" : false,
   "locked" : false,
@@ -80,6 +86,7 @@
 }, {
   "id" : "48b11c2b-db6d-a8d2-01b3-eeb7cd809e04",
   "name" : "image_field",
+  "display_width" : null,
   "label" : "Image",
   "required" : false,
   "locked" : false,

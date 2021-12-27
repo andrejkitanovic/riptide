@@ -1,0 +1,8 @@
+<div class="footer__text">
+  Contact Sales:
+</div>
+{% for item in module.link %}
+  <a class="footer__link" href="{{item.link_url}}">
+    {{item.link_text}}
+  </a>
+{% endfor %}

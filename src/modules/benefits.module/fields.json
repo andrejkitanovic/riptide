@@ -1,6 +1,7 @@
 [ {
   "id" : "52570224-c7af-568a-6e34-6ed38686c52c",
   "name" : "header",
+  "display_width" : null,
   "label" : "Header",
   "required" : false,
   "locked" : false,
@@ -11,6 +12,7 @@
 }, {
   "id" : "ce1c7ea5-4efd-f982-f26c-ff5d36f2be7f",
   "name" : "benefit_item",
+  "display_width" : null,
   "label" : "Benefit Item",
   "required" : false,
   "locked" : false,
@@ -23,6 +25,7 @@
   "children" : [ {
     "id" : "dab9fdef-dc15-807f-9d0c-bc08300626e5",
     "name" : "item_image",
+    "display_width" : null,
     "label" : "Item Image",
     "required" : false,
     "locked" : false,
@@ -39,6 +42,7 @@
   }, {
     "id" : "8fc3a88a-6c1d-cb1d-e7fc-07e4f7222d3b",
     "name" : "item_header",
+    "display_width" : null,
     "label" : "Item Header",
     "required" : false,
     "locked" : false,
@@ -49,6 +53,7 @@
   }, {
     "id" : "9ae2f87c-0e4c-b2af-987f-841e0f2c909a",
     "name" : "item_text",
+    "display_width" : null,
     "label" : "Item Text",
     "required" : false,
     "locked" : false,
@@ -68,6 +73,7 @@
 }, {
   "id" : "44bece46-0cb8-d148-862a-bf6cb8e38f98",
   "name" : "button_text",
+  "display_width" : null,
   "label" : "Button Text",
   "required" : false,
   "locked" : false,
@@ -78,6 +84,7 @@
 }, {
   "id" : "da1f4a47-c905-84cf-d9b3-4021d3573d7d",
   "name" : "button_link",
+  "display_width" : null,
   "label" : "Button Link",
   "required" : false,
   "locked" : false,

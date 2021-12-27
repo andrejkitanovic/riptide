@@ -1,6 +1,7 @@
 [ {
   "id" : "54207480-7b68-d5f6-e925-c660d399f976",
   "name" : "image_field",
+  "display_width" : null,
   "label" : "Image",
   "required" : false,
   "locked" : false,
@@ -17,6 +18,7 @@
 }, {
   "id" : "45a36854-887b-c5d7-5921-bd757a2649cb",
   "name" : "header",
+  "display_width" : null,
   "label" : "Header",
   "required" : false,
   "locked" : false,
@@ -27,6 +29,7 @@
 }, {
   "id" : "54f2aeff-6f7d-3821-de7c-beb734718e20",
   "name" : "text",
+  "display_width" : null,
   "label" : "Text",
   "required" : false,
   "locked" : false,
@@ -34,6 +37,7 @@
 }, {
   "id" : "9a5b6324-6a97-c64a-e362-4076f7bd14ef",
   "name" : "button_text",
+  "display_width" : null,
   "label" : "Button Text",
   "required" : false,
   "locked" : false,
@@ -44,6 +48,7 @@
 }, {
   "id" : "7f2aa1ec-ae8c-458a-34cb-451841eb01ff",
   "name" : "button_link",
+  "display_width" : null,
   "label" : "Button Link",
   "required" : false,
   "locked" : false,

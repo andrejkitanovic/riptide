@@ -1,6 +1,7 @@
 [ {
   "id" : "dea1f971-d0d6-eebb-683f-c6fca751c82c",
   "name" : "header",
+  "display_width" : null,
   "label" : "Header",
   "required" : false,
   "locked" : false,
@@ -11,6 +12,7 @@
 }, {
   "id" : "ea2ae6ab-06ac-e099-9ef6-ea9da83f35e1",
   "name" : "text",
+  "display_width" : null,
   "label" : "Text",
   "required" : false,
   "locked" : false,
@@ -18,6 +20,7 @@
 }, {
   "id" : "79cfb7ab-d850-8698-6690-51ba113bc4f7",
   "name" : "dots",
+  "display_width" : null,
   "label" : "Dots",
   "required" : false,
   "locked" : false,
@@ -34,12 +37,14 @@
 }, {
   "id" : "7eb2b3c1-e5d9-86a7-a8f7-7321482a4ed7",
   "name" : "icon",
+  "display_width" : null,
   "label" : "Icon",
   "required" : false,
   "locked" : false,
   "children" : [ {
     "id" : "2a101b27-75a1-c662-c08b-cbe56f3174f1",
     "name" : "text_field",
+    "display_width" : null,
     "label" : "Text",
     "required" : false,
     "locked" : false,
@@ -50,6 +55,7 @@
   }, {
     "id" : "cc93bb05-7935-d5ed-9a75-1e73ae0b666b",
     "name" : "image_field",
+    "display_width" : null,
     "label" : "Image",
     "required" : false,
     "locked" : false,
@@ -78,6 +84,7 @@
 }, {
   "id" : "0f03ad23-3185-c49e-75e5-81b49883ad1e",
   "name" : "is_gif",
+  "display_width" : null,
   "label" : "Is GIF",
   "required" : false,
   "locked" : false,
@@ -87,6 +94,7 @@
 }, {
   "id" : "421a6984-3779-3870-5096-950a2c300d24",
   "name" : "messages",
+  "display_width" : null,
   "label" : "Messages",
   "required" : false,
   "locked" : false,
@@ -100,6 +108,7 @@
   "children" : [ {
     "id" : "11dc270d-78c6-0a9d-7a0d-99545045c577",
     "name" : "first_message",
+    "display_width" : null,
     "label" : "First Message",
     "required" : false,
     "locked" : false,
@@ -116,6 +125,7 @@
   }, {
     "id" : "1d6bd4d7-e96d-858e-3d4a-0ad6d2d37109",
     "name" : "second_message",
+    "display_width" : null,
     "label" : "Second Message",
     "required" : false,
     "locked" : false,
@@ -132,6 +142,7 @@
   }, {
     "id" : "c40b8755-553b-249c-58c5-b2e27f81301e",
     "name" : "third_message",
+    "display_width" : null,
     "label" : "Third Message",
     "required" : false,
     "locked" : false,
@@ -148,6 +159,7 @@
   }, {
     "id" : "a20d7ec2-4a9d-efbb-59b5-57c2a8d62b86",
     "name" : "fourth_message",
+    "display_width" : null,
     "label" : "Fourth Message",
     "required" : false,
     "locked" : false,
@@ -164,6 +176,7 @@
   }, {
     "id" : "86fce15c-af6f-c457-ed00-a8aeeaaf209c",
     "name" : "fifth_message",
+    "display_width" : null,
     "label" : "Fifth Message",
     "required" : false,
     "locked" : false,
@@ -180,6 +193,7 @@
   }, {
     "id" : "cb375f5d-be7b-9936-0da8-c6bb2030be21",
     "name" : "chat_box",
+    "display_width" : null,
     "label" : "Chat Box",
     "required" : false,
     "locked" : false,
@@ -238,6 +252,7 @@
 }, {
   "id" : "aa864f10-030a-3841-67b0-68d0b3f3d4b0",
   "name" : "gif",
+  "display_width" : null,
   "label" : "GIF",
   "required" : false,
   "locked" : false,

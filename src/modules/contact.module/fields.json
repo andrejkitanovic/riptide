@@ -1,6 +1,7 @@
 [ {
   "id" : "28cf5c8c-0fb6-8072-3801-60f132cf27a3",
   "name" : "image_field",
+  "display_width" : null,
   "label" : "Image",
   "required" : false,
   "locked" : false,
@@ -17,6 +18,7 @@
 }, {
   "id" : "2266df29-0c29-4a37-e985-6cb118f3204d",
   "name" : "header",
+  "display_width" : null,
   "label" : "Header",
   "required" : false,
   "locked" : false,
@@ -27,6 +29,7 @@
 }, {
   "id" : "3f97b0b5-3ce0-13d4-3af6-02a267e42e4d",
   "name" : "text",
+  "display_width" : null,
   "label" : "Text",
   "required" : false,
   "locked" : false,
@@ -34,6 +37,7 @@
 }, {
   "id" : "2d9aab80-c49d-e047-f8b7-3bdd8c959df6",
   "name" : "form_field",
+  "display_width" : null,
   "label" : "Form",
   "required" : false,
   "locked" : false,
